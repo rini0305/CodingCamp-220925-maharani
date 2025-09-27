@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mini project rani</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="site-header container">
+    <div class="brand">Maharani<span class="dot">.</span></div>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">Profil</a>
+      <a href="#portfolio" class="nav-link">Pengalaman</a>
+      <a href="#contact" class="nav-link">Message Us</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <!-- HERO / HOME -->
+    <section id="home" class="hero container" aria-labelledby="homeTitle">
+      <div class="hero-left">
+        <p class="eyebrow">Hello — I'm</p>
+        <h1 id="homeTitle" class="owner-name">Maharani Ginting</h1>
+        <p class="lead">
+          Mahasiswa Aktif • Pengajar Nari (2019–2020) • Dropshipping (2020–2023) • Guru Sekolah Minggu (2023–sekarang)
+        </p>
+        <div class="hero-ctas">
+          <button id="btnContact" class="btn-primary">Contact Me</button>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="portrait-wrap" title="Foto Profil">
+          <img
+            id="hero-img"
+            src="../foto-profil.jpg"
+            alt="Foto Maharani Ginting"
+            loading="lazy"
+          />
+          <div class="portrait-ornament" aria-hidden="true"></div>
+        </div>
+
+        <div class="owner-card" aria-label="Data Diri">
+          <h3>Data Diri</h3>
+          <p><strong>Nama:</strong> Maharani Ginting</p>
+          <p><strong>Profesi:</strong> Pengajar & Wirausaha</p>
+          <p><strong>Status:</strong> Mahasiswa Aktif</p>
+          <p><strong>linkedin:</strong> www.linkedin.com/in/maharani-ginting-599507350
+</p>
+          <p><strong>Lokasi:</strong> Indonesia</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about container" aria-labelledby="aboutTitle">
+      <h2 id="aboutTitle">Tentang Saya</h2>
+      <p>Saya seorang mahasiswa aktif yang juga mengajar tari, menjalankan usaha dropshipping, dan menjadi guru sekolah minggu.</p>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="Pengalaman" class="experiences container" aria-labelledby="portfolioTitle">
+      <h2 id="portfolioTitle">Portfolio</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="badge">2019 - 2020</div>
+          <h3>Pengajar Nari</h3>
+          <p>Mengajar tari tradisional & modern.</p>
+        </article>
+
+        <article class="card">
+          <div class="badge">2020 - 2023</div>
+          <h3>Dropshipping</h3>
+          <p>Manajemen produk & pemasaran.</p>
+        </article>
+
+        <article class="card">
+          <div class="badge">2023 - Sekarang</div>
+          <h3>Guru Sekolah Minggu</h3>
+          <p>Membimbing anak-anak dalam kegiatan sekolah minggu.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact container" aria-labelledby="contactTitle">
+      <h2 id="contactTitle">Message Us</h2>
+      <div class="contact-grid">
+        <div class="contact-left">
+          <form id="contactForm" onsubmit="return false;">
+            <label for="inputName">Nama</label>
+            <input id="inputName" type="text" placeholder="Nama Anda" />
+
+            <label for="dob">Tanggal Lahir</label>
+            <input id="dob" type="date" />
+
+            <label for="gender">Jenis Kelamin</label>
+            <select id="gender">
+              <option value="">Pilih...</option>
+              <option>Laki-laki</option>
+              <option>Perempuan</option>
+              <option>Lainnya</option>
+            </select>
+
+            <label for="message">Pesan</label>
+            <textarea id="message" rows="4" placeholder="Tulis pesan..."></textarea>
+
+            <button id="submitBtn" class="btn-submit">Submit</button>
+          </form>
+        </div>
+
+        <aside class="contact-right" id="contactPreview" aria-label="Preview Pesan">
+          <h4>Preview Pesan</h4>
+          <div id="previewContent">Belum ada pesan.</div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <small>Created by Maharani Ginting</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
